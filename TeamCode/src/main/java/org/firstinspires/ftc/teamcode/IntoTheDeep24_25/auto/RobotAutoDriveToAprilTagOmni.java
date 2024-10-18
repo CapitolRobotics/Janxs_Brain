@@ -12,10 +12,6 @@ import org.firstinspires.ftc.vision.apriltag.AprilTagProcessor;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
-@Autonomous(name = "AprilTag Detection Only", group = "Autonomous")
-public class RobotAutoDriveToAprilTagOmni extends LinearOpMode {
-
     private VisionPortal visionPortal;
     private AprilTagProcessor aprilTag;
     private AprilTagDetection desiredTag = null;
@@ -27,7 +23,6 @@ public class RobotAutoDriveToAprilTagOmni extends LinearOpMode {
 
         // Initialize the AprilTag detection system
         initAprilTag();
-
         // Set exposure for webcam to reduce motion blur
         if (USE_WEBCAM) {
             setManualExposure(6, 250);
